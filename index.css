@@ -34,11 +34,16 @@ html {
 
 h1 {
   text-align: center;
-  background-color: coral;
+  background-color: black;
+  color: white;
+}
+
+p {
+  text-align: center;
 }
 
 h2 {
-  font-size: 80px;
+  font-size: 70px;
   color: white;
 }
 
@@ -51,6 +56,21 @@ h2 {
   background-size: cover;
 }
 
+.job-title {
+  color: white;
+  margin-top: 0px;
+  grid-area: t;
+  font-size: 25px;
+}
+
+.nav-question {
+  color: white;
+  margin-bottom: 010px;
+  font-size: 18px;
+  grid-area: q;
+  text-align: center;
+}
+
 .navigation-links {
   text-align: center;
   grid-area: n;
@@ -58,35 +78,35 @@ h2 {
 
 .navigation-links a {
   padding: 0px 5px 0px 5px;
-  color: blue;
+  color: black;
   text-decoration: none;
-  text-align: center;
-  font-size: 20px;
+  font-size: 12px;
   border: 2px solid black;
 }
 
 .navigation-links a:hover {
-  background-color: white;
-  color: black;
-}
-
-.nav-question {
-  color: blue;
-  margin-bottom: 0px;
-  font-size: 20px;
-  grid-area: q;
-  text-align: center;
-}
-
-.job-title {
+  background-color: black;
   color: white;
-  margin-top: 0px;
-  grid-area: t;
-  font-size: 30px;
 }
 
 .about-me {
   grid-area: a;
+  margin-top: 0px;
+}
+
+.skills {
+  grid-area: s;
+}
+.projects {
+  grid-area: p;
+}
+
+.hobbies {
+  grid-area: b;
+}
+
+.contacts {
+  grid-area: c;
 }
 
 .skills {
