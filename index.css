@@ -3,11 +3,12 @@
   display: grid;
   grid-gap: 3px;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(18, auto);
+  grid-template-rows: repeat(19, auto);
   grid-template-areas:
     "h h h h h h h h h h h h"
     "h h h h h h h h h h h h"
     "t t t t t t t t t t t t"
+    "q q q q q q q q q q q q"
     "n n n n n n n n n n n n"
     "a a a a a a a a a a a a"
     "a a a a a a a a a a a a"
@@ -51,15 +52,28 @@ h2 {
 
 .navigation-links {
   text-align: center;
-  background-color: black;
   grid-area: n;
 }
 
 .navigation-links a {
-  padding: 20px 20px 20px 20px;
-  color: white;
+  padding: 5x 20px 5px 20px;
+  color: blue;
+  text-decoration: none;
   text-align: center;
   font-size: 20px;
+  border: 2px solid black;
+}
+
+.navigation-links a:hover {
+  background-color: white;
+  color: black;
+}
+
+.nav-question {
+  margin-bottom: 0px;
+  font-size: 20px;
+  grid-area: q;
+  text-align: center;
 }
 
 .job-title {
