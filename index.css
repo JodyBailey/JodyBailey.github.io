@@ -7,8 +7,8 @@
   grid-template-areas:
     "h h h h h h h h h h h h"
     "h h h h h h h h h h h h"
-    "t t t t t t t t t t t t"
-    "q q q q q q q q q q q q"
+    "h h h h h h h h h h h h"
+    "h h h h h h h h h h h h"
     "n n n n n n n n n n n n"
     "a a a a a a a a a a a a"
     "a a a a a a a a a a a a"
@@ -58,41 +58,40 @@ p {
   grid-area: h;
   margin-top: 0px;
   margin-bottom: 0px;
-  background-image: url(new.png);
+  background-image: url(pattern.png);
   background-size: cover;
 }
 
 .job-title {
-  color: white;
   margin-top: 0px;
-  grid-area: t;
+  color: white;
+  margin-bottom: 30px;
   font-size: 25px;
 }
 
 .nav-question {
   color: white;
-  margin-bottom: 010px;
+  margin-bottom: 10px;
   font-size: 18px;
-  grid-area: q;
   text-align: center;
 }
 
 .navigation-links {
   text-align: center;
-  grid-area: n;
+  margin-bottom: 16px;
 }
 
 .navigation-links a {
   padding: 0px 5px 0px 5px;
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 13px;
-  border: 2px solid black;
+  border: 2px solid white;
 }
 
 .navigation-links a:hover {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .about-me {
