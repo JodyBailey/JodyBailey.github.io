@@ -115,6 +115,16 @@ p {
   float: right;
 }
 
+#jody-image {
+  margin: 0px 0px 0px 0px;
+  object-position: center;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px black solid;
+}
+
 .about-me {
   grid-area: a;
   margin-top: 0px;
