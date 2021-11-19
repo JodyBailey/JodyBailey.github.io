@@ -5,11 +5,11 @@
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(19, auto);
   grid-template-areas:
-    "h h h h h h h h h h h h"
-    "h h h h h h h h h h h h"
-    "h h h h h h h h h h h h"
-    "h h h h h h h h h h h h"
     "n n n n n n n n n n n n"
+    "h h h h h h h h h h h h"
+    "h h h h h h h h h h h h"
+    "h h h h h h h h h h h h"
+    "h h h h h h h h h h h h"
     "a a a a a a a a a a a a"
     "a a a a a a a a a a a a"
     "a a a a a a a a a a a a"
@@ -60,8 +60,7 @@ p {
 .header {
   text-align: center;
   grid-area: h;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0px;
   background-image: url(new.png);
   background-size: cover;
 }
@@ -73,19 +72,22 @@ p {
   font-size: 25px;
 }
 
-.nav-question {
-  color: white;
-  margin-bottom: 10px;
-  font-size: 18px;
-  text-align: center;
-}
-
 .navigation-links {
+  float: auto;
+  grid-area: n;
+  overflow: hidden;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  width: 100%;
   text-align: center;
-  margin-bottom: 16px;
+  padding: 3px 0px 3px 0px;
+  margin-block-end: 0px;
+  z-index: 1;
 }
 
 .navigation-links a {
+  text-align: center;
   padding: 0px 5px 0px 5px;
   color: white;
   text-decoration: none;
