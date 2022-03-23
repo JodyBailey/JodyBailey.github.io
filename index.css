@@ -41,6 +41,7 @@ h1 {
   background-color: black;
   color: white;
   border: 7px double #5959ab;
+  margin-top: 1px;
 }
 
 p {
