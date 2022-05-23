@@ -1,2 +1,2 @@
-# [Visit My Website](JodyBailey.github.io).
+# [Visit My Website](https://jodybailey.github.io/).
 Jody Bailey's personal website
