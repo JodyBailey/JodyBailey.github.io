@@ -1,14 +1,14 @@
 /* TABLE OF CONTENTS
 ----------------------------------------------
    Initial Set Up: Line 15
-   Navigation Bar: Line 90
-   Site Header: Line 166
-   Technical Skills: Line 218
-   Hobbies: Line 252
-   Socials: Line 312
-   Social Images Separate dimentions styling: Line 351
-   Footer: Line 391
-   Media Queries: Line 417
+   Navigation Bar: Line 98
+   Site Header: Line 174
+   Technical Skills: Line 260
+   Hobbies: Line 298
+   Socials: Line 358
+   Social Images Separate dimentions styling: Line 402
+   Footer: Line 441
+   Media Queries: Line 467
 ----------------------------------------------
 */
 
@@ -21,7 +21,12 @@
   --primary-clr-red: #f70223;
   --primary-clr-green: #00a36c;
   --primary-clr-black: rgb(20, 20, 20);
-  --gradient-border: linear-gradient(#fefefe, #fefefe) padding-box,
+  --primary-clr-white: #f1efef;
+  --gradient-border: linear-gradient(
+        var(--primary-clr-white),
+        var(--primary-clr-white)
+      )
+      padding-box,
     linear-gradient(
         to right,
         var(--primary-clr-green),
@@ -36,6 +41,7 @@
   font-family: "Josefin Sans", sans-serif;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
   scroll-padding-top: 8rem;
@@ -44,6 +50,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--primary-clr-white);
 }
 
 h1 {
@@ -112,6 +119,40 @@ section {
   letter-spacing: 0.45rem;
   padding: 0.75rem;
   margin-left: 7rem;
+}
+
+.close-navbar-container {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  top: 2rem;
+  left: 2rem;
+}
+
+.line-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.x-line {
+  position: absolute;
+  width: 100%;
+  height: 0.3rem;
+  background-color: white;
+}
+
+.x-line-1 {
+  transform: rotate(45deg);
+}
+
+.x-line-2 {
+  transform: rotate(-45deg);
 }
 
 .nav-bar-links {
@@ -233,7 +274,11 @@ section {
   height: 15rem;
   border: 1rem solid transparent;
   border-radius: 42px;
-  background: linear-gradient(#fefefe, #fefefe) padding-box,
+  background: linear-gradient(
+        var(--primary-clr-white),
+        var(--primary-clr-white)
+      )
+      padding-box,
     linear-gradient(
         to right,
         var(--primary-clr-green),
@@ -330,6 +375,11 @@ section {
   height: 10rem;
   border-radius: 15px;
   margin: 1rem;
+  transition: 0.5s;
+}
+
+.socials-card:hover {
+  transform: scale(1.1);
 }
 
 .socials-link {
@@ -395,7 +445,7 @@ section {
 
 #info-footer {
   text-align: center;
-  background-color: #d3d3d3;
+  background-color: #e0e0e0;
   color: black;
   font-weight: 600;
 }
@@ -438,6 +488,7 @@ section {
 
   .nav-bar-links {
     background-color: var(--primary-clr-black);
+    border: 1px solid white;
     display: none;
     width: 100%;
     height: 27rem;
@@ -445,6 +496,7 @@ section {
 
   .nav-bar-links ul {
     flex-direction: column;
+    justify-content: center;
     padding: 0px;
     margin: 0px;
     width: 100%;
@@ -452,6 +504,7 @@ section {
 
   .nav-bar-links li {
     text-align: center;
+    margin: 3rem;
   }
 
   .toggle-menu {
@@ -460,6 +513,10 @@ section {
 
   .nav-bar-links.clicked {
     display: flex;
+    position: absolute;
+    height: 100vh;
+    width: 50vw;
+    left: 50%;
   }
 }
 
@@ -496,6 +553,11 @@ section {
 
   .nav-bar {
     height: 6rem;
+  }
+
+  .close-navbar-container {
+    width: 3rem;
+    height: 3rem;
   }
 
   .brand-name {

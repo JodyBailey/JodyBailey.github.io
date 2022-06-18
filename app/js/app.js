@@ -2,6 +2,7 @@ const navBar = document.querySelector(".nav-bar");
 const navBarLinks = document.querySelector(".nav-bar-links");
 const toggleMenu = document.querySelector(".toggle-menu");
 const header = document.querySelector("header");
+const closeNavbar = document.querySelector(".close-navbar-container");
 const options = {
   rootMargin: "-449px 0px 0px 0px",
 };
@@ -16,8 +17,14 @@ const observer = new IntersectionObserver((entries, observer) => {
   });
 }, options);
 
-toggleMenu.addEventListener("click", () => {
-  navBarLinks.classList.toggle("clicked");
+toggleMenu.addEventListener("click", (e) => {
+  navBarLinks.classList.add("clicked");
+  closeNavbar.style.display = "block";
+});
+
+closeNavbar.addEventListener("click", (e) => {
+  navBarLinks.classList.remove("clicked");
+  closeNavbar.style.display = "none";
 });
 
 observer.observe(header);
