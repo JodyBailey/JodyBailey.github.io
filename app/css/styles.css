@@ -1,14 +1,15 @@
 /* TABLE OF CONTENTS
 ----------------------------------------------
-   Initial Set Up: Line 15
-   Navigation Bar: Line 98
-   Site Header: Line 208
-   Technical Skills: Line 260
-   Hobbies: Line 298
-   Socials: Line 358
-   Social Images Separate dimentions styling: Line 402
-   Footer: Line 441
-   Media Queries: Line 467
+   Initial Set Up: Line 16
+   Navigation Bar: Line 99
+   Site Header: Line 209
+   Technical Skills: Line 261
+   Projects: Line 299
+   Hobbies: Line 339
+   Socials: Line 398
+   Social Images Separate dimentions styling: Line 441
+   Footer: Line 481
+   Media Queries: Line 507
 ----------------------------------------------
 */
 
@@ -293,6 +294,45 @@ section {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+/* =======
+   Projects
+   =======
+*/
+
+.projects-img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.project-img {
+  width: 80%;
+  height: auto;
+  border-radius: 25px;
+  border: 0.5rem solid transparent;
+  background: var(--gradient-border);
+  box-shadow: -5px 5px 10px #c0c0c0, 5px -5px 10px #ffffff;
+}
+
+.rounded-img-container {
+  display: flex;
+  justify-content: center;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.project-sub-head {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.project-desc {
+  text-align: center;
 }
 
 /* =======
