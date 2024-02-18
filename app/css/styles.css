@@ -5,11 +5,11 @@
    Site Header: Line 209
    Technical Skills: Line 261
    Projects: Line 299
-   Hobbies: Line 339
-   Socials: Line 398
-   Social Images Separate dimentions styling: Line 441
-   Footer: Line 481
-   Media Queries: Line 507
+   Hobbies: Line 340
+   Socials: Line 399
+   Social Images Separate dimentions styling: Line 442
+   Footer: Line 482
+   Media Queries: Line 508
 ----------------------------------------------
 */
 
@@ -333,6 +333,7 @@ section {
 
 .project-desc {
   text-align: center;
+  margin: 0 auto;
 }
 
 /* =======
