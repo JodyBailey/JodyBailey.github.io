@@ -1,3 +1,5 @@
+import github from "../assets/pictures/github.png";
+
 export const techImages = [
   { src: "src/assets/pictures/htmlLogo.png", alt: "A logo of HTML 5" },
   { src: "src/assets/pictures/cssLogo.png", alt: "A logo of CSS 3" },
@@ -13,7 +15,7 @@ export const techImages = [
 
 export const socialImages = [
   {
-    src: "src/assets/pictures/github.png",
+    src: github,
     alt: "A picture of the github logo",
     url: "https://github.com/JodyBaileyy",
     text: "Github",
