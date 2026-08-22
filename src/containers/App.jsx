@@ -1,5 +1,7 @@
 import { useRef, useEffect } from "react";
 
+import memoryGame from "../assets/pictures/memorygame.png";
+
 import Navbar from "./Navbar";
 import Header from "../components/Header";
 import Section from "../components/Section";
@@ -59,7 +61,7 @@ const App = () => {
         <Section id={"projects"} heading={"Projects"}>
           <Project
             heading={"Memory Game"}
-            url={"https://jodybailey.github.io/Memory-Game/"}
+            url={memoryGame}
             src={"/src/assets/pictures/memorygame.png"}
             alt={"A picture of a memory game"}
             description={"A simple memory game made with react + redux"}
