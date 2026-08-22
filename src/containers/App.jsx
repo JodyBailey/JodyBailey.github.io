@@ -61,8 +61,8 @@ const App = () => {
         <Section id={"projects"} heading={"Projects"}>
           <Project
             heading={"Memory Game"}
-            url={memoryGame}
-            src={"/src/assets/pictures/memorygame.png"}
+            url={"https://jodybailey.github.io/Memory-Game/"}
+            src={memoryGame}
             alt={"A picture of a memory game"}
             description={"A simple memory game made with react + redux"}
           />
