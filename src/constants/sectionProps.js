@@ -1,16 +1,33 @@
 import github from "../assets/pictures/github.png";
+import html from "../assets/pictures/htmlLogo.png";
+import css from "../assets/pictures/cssLogo.png";
+import javascript from "../assets/pictures/JSLogo.png";
+import nodeJs from "../assets/pictures/nodeJS.png";
+import git from "../assets/pictures/git.png";
+import postgres from "../assets/pictures/postgres.png";
+import reactLogo from "../assets/pictures/react.png";
+import docker from "../assets/pictures/docker.png";
+import rails from "../assets/pictures/rails.png";
+import python from "../assets/pictures/python.png";
+import email from "../assets/pictures/email.png";
+import linkedIn from "../assets/pictures/linkedin.png";
+import hackerrank from "../assets/pictures/hackerrank.png";
+import whatsApp from "../assets/pictures/whatsapp.png";
+import freeCodeCamp from "../assets/pictures/FCC.png";
+import music from "../assets/pictures/music-production.jpeg";
+import writing from "../assets/pictures/writing.jpg";
 
 export const techImages = [
-  { src: "src/assets/pictures/htmlLogo.png", alt: "A logo of HTML 5" },
-  { src: "src/assets/pictures/cssLogo.png", alt: "A logo of CSS 3" },
-  { src: "src/assets/pictures/JSLogo.png", alt: "A logo of Javascript" },
-  { src: "src/assets/pictures/nodeJS.png", alt: "A logo of Node.js" },
-  { src: "src/assets/pictures/git.png", alt: "A logo of Git" },
-  { src: "src/assets/pictures/postgres.png", alt: "A logo of PostgreSQL" },
-  { src: "src/assets/pictures/react.png", alt: "A logo of React" },
-  { src: "src/assets/pictures/docker.png", alt: "A logo of Docker" },
-  { src: "src/assets/pictures/rails.png", alt: "A logo of Ruby on Rails" },
-  { src: "src/assets/pictures/python.png", alt: "A logo of Python" },
+  { src: html, alt: "A logo of HTML 5" },
+  { src: css, alt: "A logo of CSS 3" },
+  { src: javascript, alt: "A logo of Javascript" },
+  { src: nodeJs, alt: "A logo of Node.js" },
+  { src: git, alt: "A logo of Git" },
+  { src: postgres, alt: "A logo of PostgreSQL" },
+  { src: reactLogo, alt: "A logo of React" },
+  { src: docker, alt: "A logo of Docker" },
+  { src: rails, alt: "A logo of Ruby on Rails" },
+  { src: python, alt: "A logo of Python" },
 ];
 
 export const socialImages = [
@@ -22,35 +39,35 @@ export const socialImages = [
     id: "github-img",
   },
   {
-    src: "src/assets/pictures/email.png",
+    src: email,
     alt: "An email icon",
     url: "mailto:jjeb2020@gmail.com",
     text: "Email",
     id: "email-icon",
   },
   {
-    src: "src/assets/pictures/linkedin.png",
+    src: linkedIn,
     alt: "A picture of the LinkedIn logo",
     url: "https://www.linkedin.com/in/jody-bailey-581381226/",
     text: "LinkedIn",
     id: "linkedin-icon",
   },
   {
-    src: "src/assets/pictures/hackerrank.png",
+    src: hackerrank,
     alt: "A picture of the Hackerrank logo",
     url: "https://www.hackerrank.com/jjeb2020",
     text: "Hackerrank",
     id: "hackerrank-icon",
   },
   {
-    src: "src/assets/pictures/whatsapp.png",
+    src: whatsApp,
     alt: "A picture of the WhatsApp Logo",
     url: "https://api.whatsapp.com/send/?phone=27614378557",
     text: "WhatsApp",
     id: "whatsapp-icon",
   },
   {
-    src: "src/assets/pictures/FCC.png",
+    src: freeCodeCamp,
     alt: "A picture of the FreeCodeCamp logo",
     url: "https://www.freecodecamp.org/jodybailey",
     text: "FreeCodeCamp",
@@ -62,13 +79,13 @@ export const socialImages = [
 export const hobbies = [
   {
     heading: "Music",
-    src: "/src/assets/pictures/music-production.jpeg",
+    src: music,
     alt: "A picture of a small music studio",
     text: "One of the career fields that I was previously interested in was sound engineering, but mostly it was just me thinking that music was the whole of sound engineering, and later I realized that it was much more than that. So one thing I do is make a bunch of beats from the fresh ideas that come up in my head, although I realized that it is almost impossible to replicate what is in your head. The beats are very laid-back and harmonic, just like the type of music I listen to. Even though these beats are objectively mediocre, I treasure them because, to me, they represent an idea I had that has not been mastered yet.",
   },
   {
     heading: "Writing",
-    src: "/src/assets/pictures/writing.jpg",
+    src: writing,
     alt: "A picture of writing in a book",
     text: "Writing has become one of the hobbies I never would have thought I would do, but here I am making characters and plots that I find interesting. I only got into it very recently, so I am a complete amateur, but I hope that as time progresses, I will gain enough confidence to show someone one of my stories.",
   },

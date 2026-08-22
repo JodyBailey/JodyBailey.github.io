@@ -1,3 +1,5 @@
+import cv from "../assets/documents/Jody Bailey CV.pdf";
+
 const Header = ({ headerRef }) => {
   return (
     <header ref={headerRef}>
@@ -6,11 +8,7 @@ const Header = ({ headerRef }) => {
           <h1>Full-Stack Software Engineer</h1>
         </div>
         <div id="download-cv-container">
-          <a
-            href="./assets/documents/Jody Bailey CV.pdf"
-            id="download-cv-button"
-            download="jody-bailey-cv"
-          >
+          <a href={cv} id="download-cv-button" download="jody-bailey-cv">
             Download CV
           </a>
         </div>
